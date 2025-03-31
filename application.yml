@@ -1,8 +1,3 @@
-#GOOGLE APP ID AND SECRET KEY
-APP:
-  ID: 844717647114774
-  SECRET: 31d596fd4632b3d8f17f23ceaeb4dffd
-
 
 #EUREKA SERVER CONFIGURATION
 eureka:
@@ -14,26 +9,4 @@ eureka:
   instance:
     prefer-ip-address: true
 
-# JWT AUTHENTICATION SECRET KEY
-secret:
-  key: 774488559966abcsdefghijklmnopqrstuvwxyz1234567890
 
-# DATABASE AND JPA CONFIGURATION
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-      username: root
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
-    show-sql: true
-
-  # MULTIPART CONFIGURATION
-  servlet:
-    multipart:
-      enabled: true
-      max-file-size: 20MB
-      max-request-size: 20MB
